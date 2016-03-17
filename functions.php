@@ -1207,7 +1207,9 @@ function sudamala_availability_form($attr)
 				        </div>';
 				}
 
-			$pinar_main_slider_code .='</div>';
+			$pinar_main_slider_code .='<!-- close main slider --></div>';
+			$pinar_main_slider_code .='<div class="easter">
+			<img src="http://www.sudamalaresorts.com/wp-content/uploads/2016/03/EASTER-EGG-resize400.png"></div>';
 		}
 		else
 		{
