@@ -1,0 +1,1 @@
+sudamala pinar child theme
