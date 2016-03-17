@@ -75,7 +75,7 @@ body.page-template-home-page #welcome{margin-bottom:0px;}
 #main-slider.bali-snorkelling img{top:45%;}
 #main-slider.lombok-dining-offer img{top:45%;}
 #main-slider.bali-spa-indulgence img{top:56%;}
-.easter{position: absolute;left: 0%;top: 30%;}
+.easter{position: absolute;left: 0%;top: 20%;}
 #gallery .internal-page-title{background-image:url("/bali/wp-content/uploads/sites/2/2016/01/about_05.jpg")!important;}
 .gallery-container.gallery-grid.sudamala-main-gallery .image-main-box .item img, .gallery-container.gallery-grid.sudamala-gallery .image-main-box .item img, .gallery-container.gallery-grid .image-main-box .item img{max-width:200%;height:100%;}
 .gallery-container.gallery-grid.sudamala-main-gallery .sort-section{margin:0px 0;}
@@ -226,6 +226,7 @@ body{color:#585858;}
 #main-booking-form.style-2.sudamala-booking .booking-form .booking-fields{width:100%;float:none;}
 #luxury-rooms.wedding-planning .room-boxes .price{display:none;}
 .container .ngg-galleryoverview{width:100%;}
+.easter {left: 50%;top: 5%;transform: translate(-50%);}
 }
 @media (max-width:767px){.reasons-container{width:100%;}
 .page-template-sudamala-restaurant #luxury-rooms{padding-left:10px;padding-right:10px;}
@@ -246,4 +247,5 @@ h3.panel-title a{font-size:20px;}
 .heading-box.slider-title{padding:0px 10px 10px;}
 #special-packages-type-2 .package-boxes .package-details .description ul.list-inline.purity-facial{margin-left:0px;}
 ul.services.list-inline.meeting-terms.yoga{margin-left:0px;}
+.easter img {width: 300px;}
 }
