@@ -1208,6 +1208,23 @@ function sudamala_availability_form($attr)
 				}
 
 			$pinar_main_slider_code .='<!-- close main slider --></div>';
+
+			$blog_id = get_current_blog_id();
+			$ta_bali = '<a href="https://www.thebookingbutton.com.au/properties/sudamaladirect" target="_blank">
+			<img src="http://www.sudamalaresorts.com/wp-content/uploads/2016/03/TRIPADVISOR_SUDAMALA_BALI150.png">
+			</a>';
+			$ta_lombok = '<a href="https://www.thebookingbutton.com.au/properties/villasenggigidirect" target="_blank">
+			<img src="http://www.sudamalaresorts.com/wp-content/uploads/2016/03/TRIPADVISOR_SUDAMALA_LOMBOK150.png">
+			</a>';
+			if($blog_id == 1){
+				$pinar_main_slider_code .='<div class="ta">'. $ta_bali . $ta_lombok .'</div>';
+			}elseif($blog_id == 2){
+				$pinar_main_slider_code .='<div class="ta">'. $ta_bali .'</div>';
+			}elseif($blog_id == 4){
+				$pinar_main_slider_code .='<div class="ta">'. $ta_lombok .'</div>';
+			}
+
+
 			$pinar_main_slider_code .='<div class="easter">
 			<img src="http://www.sudamalaresorts.com/wp-content/uploads/2016/03/EASTER-EGG-resize400.png"></div>';
 		}
