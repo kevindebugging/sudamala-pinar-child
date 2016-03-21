@@ -13,7 +13,7 @@ $page_meta_class = (get_post_meta( get_the_id() , 'pinar_page_class', true ) ? g
 <head>
 	<meta charset="<?php esc_attr( bloginfo( 'charset' ) ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
-	
+
 	<?php
     if(isset($pinar_opt['opt-custom-css']) && $pinar_opt['opt-custom-css'] !=='')
     {
@@ -69,7 +69,7 @@ $page_meta_class = (get_post_meta( get_the_id() , 'pinar_page_class', true ) ? g
 					?>
 					<li><?php if($blog_id != 2) {echo '<a href="/bali/">';} ?>BALI<?php if($blog_id != 2) {echo '</a>';} ?></li>
 					<li><?php if($blog_id != 4) {echo '<a href="/lombok/">';} ?>LOMBOK<?php if($blog_id != 4) {echo '</a>';} ?></li>
-					<!--<li><?php if($blog_id != 5) {echo '<a href="/komodo/">';} ?>KOMODO<?php if($blog_id != 5) {echo '</a>';} ?></li>-->
+					<li style="color: white;"><?php if($blog_id != 5) {echo '<!--<a href="/komodo/">-->';} ?>KOMODO - Coming Soon<?php if($blog_id != 5) {echo '</a>';} ?></li>
 				</ul>
 				<?php
 				if(shortcode_exists( 'icl_language_selector' ))
