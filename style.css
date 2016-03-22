@@ -77,6 +77,9 @@ body.page-template-home-page #welcome{margin-bottom:0px;}
 #main-slider.bali-spa-indulgence img{top:56%;}
 .easter{position: absolute;left: 0%;top: 20%;}
 .ta{position: absolute;right: 0;top: 20%;display:none;}
+.page-id-696 .ta {
+    display: block;
+}
 #gallery .internal-page-title{background-image:url("/bali/wp-content/uploads/sites/2/2016/01/about_05.jpg")!important;}
 .gallery-container.gallery-grid.sudamala-main-gallery .image-main-box .item img, .gallery-container.gallery-grid.sudamala-gallery .image-main-box .item img, .gallery-container.gallery-grid .image-main-box .item img{max-width:200%;height:100%;}
 .gallery-container.gallery-grid.sudamala-main-gallery .sort-section{margin:0px 0;}
@@ -227,8 +230,9 @@ body{color:#585858;}
 #main-booking-form.style-2.sudamala-booking .booking-form .booking-fields{width:100%;float:none;}
 #luxury-rooms.wedding-planning .room-boxes .price{display:none;}
 .container .ngg-galleryoverview{width:100%;}
-.easter {left: 50%;top: 40%;transform: translate(-50%);}
-.ta {left: 50%;top: 5%;transform: translate(-50%);display:none;}
+.easter {/*left: 50%;top: 40%;transform: translate(-50%);*/top: 5%;}
+.easter img {width: 250px;}
+.ta {/*left: 50%;transform: translate(-50%);*/top: 5%;display:none;}
 }
 @media (max-width:767px){.reasons-container{width:100%;}
 .page-template-sudamala-restaurant #luxury-rooms{padding-left:10px;padding-right:10px;}
@@ -239,6 +243,9 @@ body{color:#585858;}
 .owl-theme .owl-controls{width:auto;}
 .heading-box.slider-title{padding:10px 20px 20px;}
 #main-booking-form.style-2.sudamala-booking .booking-button-container.col-xs-6.col-md-4{width:100%;float:none;}
+.easter img {width: 200px;}
+.page-id-696 .ta {width: auto!important;}
+.ta img {width: 100px;}
 }
 @media (max-width:420px){#main-booking-form.style-2.sudamala-booking .booking-form .booking-fields i.fa{right:16px;}
 #welcome .desc.about{width:100%;}
@@ -249,5 +256,6 @@ h3.panel-title a{font-size:20px;}
 .heading-box.slider-title{padding:0px 10px 10px;}
 #special-packages-type-2 .package-boxes .package-details .description ul.list-inline.purity-facial{margin-left:0px;}
 ul.services.list-inline.meeting-terms.yoga{margin-left:0px;}
-.easter img {width: 300px;}
+.easter img {width: 150px;}
+.ta img {width: 85px;}
 }
