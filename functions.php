@@ -200,17 +200,84 @@ function sudamala_availability_form($attr)
 	}
 
 	$action_link = "http://www.thebookingbutton.com.au/properties/";
+	$pinar_availability_form_str = '';
 	$blog_id = get_current_blog_id();
 	if($blog_id == 1 || $blog_id == 2){
 		$action_link .= "sudamaladirect?locale=en";
+		$pinar_availability_form_str .= '
+			<!-- Google Code for Booking Button Bali Conversion Page
+			In your html page, add the snippet and call
+			goog_report_conversion when someone clicks on the
+			chosen link or button. -->
+			<script type="text/javascript">
+			  /* <![CDATA[ */
+			  goog_snippet_vars = function() {
+			    var w = window;
+			    w.google_conversion_id = 961940360;
+			    w.google_conversion_label = "E_5CCOHy-mEQiJfYygM";
+			    w.google_remarketing_only = false;
+			  }
+			  // DO NOT CHANGE THE CODE BELOW.
+			  goog_report_conversion = function(url) {
+			    goog_snippet_vars();
+			    window.google_conversion_format = "3";
+			    var opt = new Object();
+			    opt.onload_callback = function() {
+			    if (typeof(url) != \'undefined\') {
+			      //window.location = url;
+			    }
+			  }
+			  var conv_handler = window[\'google_trackConversion\'];
+			  if (typeof(conv_handler) == \'function\') {
+			    conv_handler(opt);
+			  }
+			}
+			/* ]]> */
+			</script>
+			<script type="text/javascript"
+			src="//www.googleadservices.com/pagead/conversion_async.js">
+			</script>';
 	}elseif($blog_id == 4){
 		$action_link .= "villasenggigidirect?locale=en";
+		$pinar_availability_form_str .= '
+			<!-- Google Code for booking button Lombok Conversion Page
+			In your html page, add the snippet and call
+			goog_report_conversion when someone clicks on the
+			chosen link or button. -->
+			<script type="text/javascript">
+			/* <![CDATA[ */
+			goog_snippet_vars = function() {
+				var w = window;
+				w.google_conversion_id = 961940360;
+				w.google_conversion_label = "8TOCCOXw-mEQiJfYygM";
+				w.google_remarketing_only = false;
+			}
+			// DO NOT CHANGE THE CODE BELOW.
+			goog_report_conversion = function(url) {
+				goog_snippet_vars();
+				window.google_conversion_format = "3";
+				var opt = new Object();
+				opt.onload_callback = function() {
+				if (typeof(url) != \'undefined\') {
+					//window.location = url;
+				}
+			}
+			var conv_handler = window[\'google_trackConversion\'];
+			if (typeof(conv_handler) == \'function\') {
+				conv_handler(opt);
+			}
+			}
+			/* ]]> */
+			</script>
+			<script type="text/javascript"
+			src="//www.googleadservices.com/pagead/conversion_async.js">
+			</script> ';
 	}
 
 	switch ($pinar_availability_form_attr['type']) {
 		case 'vertical':
 
-		$pinar_availability_form_str = '
+		$pinar_availability_form_str .= '
 		<div class="booking-form-container container">
 		<div id="main-booking-form" class="'.esc_attr($pinar_availability_form_attr['style']).' sudamala-booking">
 
@@ -239,7 +306,7 @@ function sudamala_availability_form($attr)
 		</select>
 		</div>-->
 		<div class="booking-button-container col-md-4">
-		<input class="btn btn-default" value="'.esc_attr__('Check Availability', 'ravis').'" type="submit"/>
+		<input onclick="goog_report_conversion (\'https://www.thebookingbutton.com.au\')" class="btn btn-default" value="'.esc_attr__('Check Availability', 'ravis').'" type="submit"/>
 		</div>
 		</form>
 		</div>
@@ -247,7 +314,7 @@ function sudamala_availability_form($attr)
 		break;
 
 		case 'horizontal':
-		$pinar_availability_form_str ='
+		$pinar_availability_form_str .='
 		<form class="booking-form horizontal container" action="'.$action_link.'" method="get" autocomplete="off" target="_blank">
 		<div class="input-daterange col-md-12">
 		<div class="booking-fields col-md-6">
@@ -272,7 +339,7 @@ function sudamala_availability_form($attr)
 		</select>
 		</div>-->
 		<div class="booking-button-container">
-		<input class="btn btn-default" value="'.esc_attr__('Book Now', 'ravis').'" type="submit"/>
+		<input onclick="goog_report_conversion (\'https://www.thebookingbutton.com.au\')" class="btn btn-default" value="'.esc_attr__('Book Now', 'ravis').'" type="submit"/>
 		</div>
 		</form>';
 
