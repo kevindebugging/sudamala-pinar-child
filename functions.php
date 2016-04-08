@@ -1327,8 +1327,8 @@ function sudamala_main_slider($attr)
 		}
 
 
-		/*$pinar_main_slider_code .='<div class="easter">
-		<img src="http://www.sudamalaresorts.com/wp-content/uploads/2016/03/EASTER-EGG-resize400.png"></div>';*/
+		$pinar_main_slider_code .='<div class="easter">
+		<img src="http://www.sudamalaresorts.com/wp-content/uploads/2016/04/instant-bliss3.png"></div>';
 	}
 	else
 	{

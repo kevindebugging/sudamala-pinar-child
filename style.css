@@ -75,9 +75,12 @@ body.page-template-home-page #welcome{margin-bottom:0px;}
 #main-slider.bali-snorkelling img{top:45%;}
 #main-slider.lombok-dining-offer img{top:45%;}
 #main-slider.bali-spa-indulgence img{top:56%;}
-.easter{position: absolute;left: 0%;top: 20%;}
+.easter{position: absolute;left: 5%;top: 15%;display:none;}
 .ta{position: absolute;right: 0;top: 20%;display:none;}
 .page-id-696 .ta {
+    /*display: block;*/
+}
+.page-id-696 .easter {
     display: block;
 }
 #gallery .internal-page-title{background-image:url("/bali/wp-content/uploads/sites/2/2016/01/about_05.jpg")!important;}
@@ -207,6 +210,23 @@ body{color:#585858;}
 #luxury-rooms .room-boxes .room-details .description, #special-dishes .room-boxes .room-details .description, #luxury-rooms .room-boxes .package-details .description, #special-dishes .room-boxes .package-details .description, #luxury-rooms .package-boxes .room-details .description, #special-dishes .package-boxes .room-details .description, #luxury-rooms .package-boxes .package-details .description, #special-dishes .package-boxes .package-details .description, #special-packages-type-2 .room-boxes .room-details .description, #special-packages-type-2 .room-boxes .package-details .description, #special-packages-type-2 .package-boxes .room-details .description, #special-packages-type-2 .package-boxes .package-details .description, #welcome, body.sticky #main-header.sticky a{color:#585858;}
 .bold .heading-box h2, .bold .heading-box h2 b, .bold.heading-box h2{font-weight:bold;}
 #our-services .heading-box h2, #our-services .heading-box h2 b, .heading-box.slider-title h2{font-weight:bold;}
+.splash-recaptcha {padding-bottom: 10px;padding-left: 15px;}
+/*#top-footer #txtCaptchaDiv, #top-footer #txtInput, .captcha-container{
+display: none;
+}*/
+span#txtCaptchaDiv {
+    background-color: #50ACE7;
+    width: 50%;
+    display: block;
+    float: left;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+#top-footer input#txtInput {
+    width: 50%;
+}
 @media (max-width:1200px){#special-packages.sudamala-special-packages .package-box .title{font-size:29px;}
 #special-packages.sudamala-special-packages .package-box:nth-child(2) .package-inner .title{font-size:24px;}
 #special-packages.sudamala-special-packages .package-box .package-inner{padding:30px 10px 40px;}
@@ -231,7 +251,7 @@ body{color:#585858;}
 #luxury-rooms.wedding-planning .room-boxes .price{display:none;}
 .container .ngg-galleryoverview{width:100%;}
 .easter {/*left: 50%;top: 40%;transform: translate(-50%);*/top: 5%;}
-.easter img {width: 250px;}
+.easter img {/*width: 250px;*/}
 .ta {/*left: 50%;transform: translate(-50%);*/top: 5%;display:none;}
 }
 @media (max-width:767px){.reasons-container{width:100%;}
@@ -243,7 +263,7 @@ body{color:#585858;}
 .owl-theme .owl-controls{width:auto;}
 .heading-box.slider-title{padding:10px 20px 20px;}
 #main-booking-form.style-2.sudamala-booking .booking-button-container.col-xs-6.col-md-4{width:100%;float:none;}
-.easter img {width: 200px;}
+.easter img {/*width: 200px;*/}
 .page-id-696 .ta {width: auto!important;}
 .ta img {width: 100px;}
 }
@@ -256,6 +276,6 @@ h3.panel-title a{font-size:20px;}
 .heading-box.slider-title{padding:0px 10px 10px;}
 #special-packages-type-2 .package-boxes .package-details .description ul.list-inline.purity-facial{margin-left:0px;}
 ul.services.list-inline.meeting-terms.yoga{margin-left:0px;}
-.easter img {width: 150px;}
+.easter img {width: 110px;}
 .ta img {width: 85px;}
 }
